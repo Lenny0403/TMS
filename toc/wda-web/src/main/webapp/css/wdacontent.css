@@ -1,0 +1,16 @@
+body {
+	background-color: gray;
+}
+
+.wdahtmlbox {
+	margin: auto;
+	padding: 16px;
+	width: 800px;
+	background-color: white;
+}
+.wdaTitleBox{
+	
+}
+.wdaTitleBox img{
+	width: 64px;
+}

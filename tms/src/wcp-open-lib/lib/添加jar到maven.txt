@@ -1,0 +1,15 @@
+//命令说明：
+然后用下面的命令装下载下来的jar包安装到本地仓库：
+mvn install:install-file -DgroupId=org.jboss.cache -DartifactId=jbosscache-core -Dversion=3.2.7.GA -Dpackaging=jar -Dfile=D:\jbosscache-core-3.2.7.GA.jar
+参数说明如下
+-DgroupId=远程仓库对应的DgroupId
+-DartifactId= 远程仓库对应的 DartifactId 
+-Dversion=对应版本号
+-Dfile=D:\jbosscache-core-3.2.7.GA.jar 文件地址
+
+
+//需要添加的4个jar文件
+mvn install:install-file -DgroupId=com.farm -DartifactId=farm-core -Dversion=3.2.0 -Dpackaging=jar -Dfile=jar文件地址
+mvn install:install-file -DgroupId=com.farm -DartifactId=wcp-authority -Dversion=3.2.0 -Dpackaging=jar -Dfile=jar文件地址
+mvn install:install-file -DgroupId=com.farm -DartifactId=wcp-parameter -Dversion=3.2.0 -Dpackaging=jar -Dfile=jar文件地址
+mvn install:install-file -DgroupId=com.farm -DartifactId=wda-api -Dversion=1.2.2 -Dpackaging=jar -Dfile=jar文件地址

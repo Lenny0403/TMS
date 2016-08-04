@@ -1,0 +1,80 @@
+<conf>
+	<files>
+		<file><!-- 目标文件格式定义 exname为原文件的扩展名大写 filename为生成的目标文件 path为相对路径 -->
+			<exname>TXT</exname>
+			<filename path="txt">text.txt</filename>
+		</file>
+		<file>
+			<exname>HTML</exname>
+			<filename path="html">index.html</filename>
+		</file>
+		<file>
+			<exname>PDF</exname>
+			<filename path="pdf">file.pdf</filename>
+		</file>
+	</files>
+	<types>
+		<type>
+			<name>rar</name>
+			<target>
+				<exname impl="com.farm.wda.adaptor.impl.ZipRarToHtmlConvertor">HTML</exname>
+			</target>
+		</type>
+		<type>
+			<name>zip</name>
+			<target>
+				<exname impl="com.farm.wda.adaptor.impl.ZipRarToHtmlConvertor">HTML</exname>
+			</target>
+		</type>
+		<type>
+			<name>web</name>
+			<target>
+				<exname impl="com.farm.wda.adaptor.impl.WebSiteToHtmlConvertor">HTML</exname>
+			</target>
+		</type>
+		<type>
+			<name>doc</name>
+			<target>
+				<!-- <exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">TXT</exname> -->
+				<exname impl="com.farm.wda.adaptor.impl.DocToHtmlConvertor">HTML</exname>
+				<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">PDF</exname>
+			</target>
+		</type>
+		<type>
+			<name>docx</name>
+			<target>
+				<!-- <exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">TXT</exname> -->
+				<exname impl="com.farm.wda.adaptor.impl.DocToHtmlConvertor">HTML</exname>
+				<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">PDF</exname>
+			</target>
+		</type>
+		<type>
+			<name>xls</name>
+			<target>
+				<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">HTML</exname>
+				<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">PDF</exname>
+			</target>
+		</type>
+		<type>
+			<name>xlsx</name>
+			<target>
+				<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">HTML</exname>
+				<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">PDF</exname>
+			</target>
+		</type>
+		<type>
+			<name>ppt</name>
+			<target>
+				<!--<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">TXT</exname> -->
+				<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">HTML</exname>
+			</target>
+		</type>
+		<type>
+			<name>pptx</name>
+			<target>
+				<!--<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">TXT</exname> -->
+				<exname impl="com.farm.wda.adaptor.impl.OpenOfficeConvertor">HTML</exname>
+			</target>
+		</type>
+	</types>
+</conf>

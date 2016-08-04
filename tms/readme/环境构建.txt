@@ -1,0 +1,3 @@
+1.使用eclipse作为IDE搭建开发环境（也可用其他支持maven项目的IDE）
+2.导入src目录下的所有项目
+3.找到wcp-open-lib项目的lib目录，将下面4个jar添加的maven仓库中（添加脚本参照lib下的txt格式的说明文档）
